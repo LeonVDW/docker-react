@@ -1,5 +1,5 @@
 # BUILD PHASE
-FROM node:11.10.1-alpine as builder
+FROM node:10.15-alpine as builder
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
